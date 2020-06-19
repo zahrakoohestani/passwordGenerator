@@ -1,1 +1,17 @@
 <h1>Be Unexpected with Password Generator!</h1>
+<form action="{% url 'password' %}">
+    <p>choose the length of your password: (the longer , the better!)</p>
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select><br><br>
+    <input type="checkbox" name="uppercase">include uppercase?<br>
+    <input type="checkbox" name="symbols">include symbols?<br>
+    <input type="checkbox" name="numbers">include numbers?<br>
+    <input type="submit" name="password" value="Generate My Password :}">
+</form>
